@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F10976F9-337E-4283-8313-013DFC06344C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CountryAndCityWeb</RootNamespace>
+    <AssemblyName>CountryAndCityWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="floalaEditort\css\froala_content.css" />
+    <Content Include="floalaEditort\css\froala_content.min.css" />
+    <Content Include="floalaEditort\css\froala_editor.css" />
+    <Content Include="floalaEditort\css\froala_editor.min.css" />
+    <Content Include="floalaEditort\css\froala_style.css" />
+    <Content Include="floalaEditort\css\froala_style.min.css" />
+    <Content Include="floalaEditort\css\themes\dark.css" />
+    <Content Include="floalaEditort\css\themes\dark.min.css" />
+    <Content Include="floalaEditort\css\themes\gray.css" />
+    <Content Include="floalaEditort\css\themes\gray.min.css" />
+    <Content Include="floalaEditort\css\themes\red.css" />
+    <Content Include="floalaEditort\css\themes\red.min.css" />
+    <Content Include="floalaEditort\css\themes\royal.css" />
+    <Content Include="floalaEditort\css\themes\royal.min.css" />
+    <Content Include="floalaEditort\examples\always_blank.html" />
+    <Content Include="floalaEditort\examples\always_visible.html" />
+    <Content Include="floalaEditort\examples\basic.html" />
+    <Content Include="floalaEditort\examples\block_tags.html" />
+    <Content Include="floalaEditort\examples\characters_counter.html" />
+    <Content Include="floalaEditort\examples\code_preview.html" />
+    <Content Include="floalaEditort\examples\customize_button_icons.html" />
+    <Content Include="floalaEditort\examples\custom_block_styles.html" />
+    <Content Include="floalaEditort\examples\custom_buttons.html" />
+    <Content Include="floalaEditort\examples\custom_dropdown.html" />
+    <Content Include="floalaEditort\examples\custom_image_buttons.html" />
+    <Content Include="floalaEditort\examples\default_tag.html" />
+    <Content Include="floalaEditort\examples\direction_basic_mode.html" />
+    <Content Include="floalaEditort\examples\direction_inline_mode.html" />
+    <Content Include="floalaEditort\examples\disable_button.html" />
+    <Content Include="floalaEditort\examples\empty.html" />
+    <Content Include="floalaEditort\examples\enter_disabled.html" />
+    <Content Include="floalaEditort\examples\events\blur.html" />
+    <Content Include="floalaEditort\examples\events\blur_and_focus.html" />
+    <Content Include="floalaEditort\examples\events\contentChanged.html" />
+    <Content Include="floalaEditort\examples\events\focus.html" />
+    <Content Include="floalaEditort\examples\events\focus_text.html" />
+    <Content Include="floalaEditort\examples\events\getHTML.html" />
+    <Content Include="floalaEditort\examples\events\imageResize.html" />
+    <Content Include="floalaEditort\examples\events\onPaste.html" />
+    <Content Include="floalaEditort\examples\events\removeImage.html" />
+    <Content Include="floalaEditort\examples\file_upload.html" />
+    <Content Include="floalaEditort\examples\focus_on_editor.html" />
+    <Content Include="floalaEditort\examples\font_family.html" />
+    <Content Include="floalaEditort\examples\fullscreen.html" />
+    <Content Include="floalaEditort\examples\height.html" />
+    <Content Include="floalaEditort\examples\icons.html" />
+    <Content Include="floalaEditort\examples\iframe\content.html" />
+    <Content Include="floalaEditort\examples\iframe\index.html" />
+    <Content Include="floalaEditort\examples\image_buttons.html" />
+    <Content Include="floalaEditort\examples\image_link_disabled.html" />
+    <Content Include="floalaEditort\examples\image_upload_disabled.html" />
+    <Content Include="floalaEditort\examples\init_destroy.html" />
+    <Content Include="floalaEditort\examples\init_on_button.html" />
+    <Content Include="floalaEditort\examples\init_on_click.html" />
+    <Content Include="floalaEditort\examples\init_on_image.html" />
+    <Content Include="floalaEditort\examples\init_on_image_with_link.html" />
+    <Content Include="floalaEditort\examples\init_on_link.html" />
+    <Content Include="floalaEditort\examples\init_on_link_unlink_button_disabled.html" />
+    <Content Include="floalaEditort\examples\init_on_link_with_link_text.html" />
+    <Content Include="floalaEditort\examples\init_without_image_and_link.html" />
+    <Content Include="floalaEditort\examples\inline.html" />
+    <Content Include="floalaEditort\examples\inline_styles.html" />
+    <Content Include="floalaEditort\examples\inline_with_no_buttons.html" />
+    <Content Include="floalaEditort\examples\language.html" />
+    <Content Include="floalaEditort\examples\link_attributes.html" />
+    <Content Include="floalaEditort\examples\link_classes.html" />
+    <Content Include="floalaEditort\examples\link_text.html" />
+    <Content Include="floalaEditort\examples\live_preview.html" />
+    <Content Include="floalaEditort\examples\media_manager_disabled.html" />
+    <Content Include="floalaEditort\examples\min_height.html" />
+    <Content Include="floalaEditort\examples\paragraphy_disabled.html" />
+    <Content Include="floalaEditort\examples\plain_paste.html" />
+    <Content Include="floalaEditort\examples\predefined_link_list.html" />
+    <Content Include="floalaEditort\examples\require_js\index.html" />
+    <Content Include="floalaEditort\examples\require_js\js\app.js" />
+    <Content Include="floalaEditort\examples\require_js\js\lib\require.js" />
+    <Content Include="floalaEditort\examples\scrollable_container.html" />
+    <Content Include="floalaEditort\examples\shortcuts_available.html" />
+    <Content Include="floalaEditort\examples\simple_ampersand.html" />
+    <Content Include="floalaEditort\examples\table.html" />
+    <Content Include="floalaEditort\examples\tabSpaces_disabled.html" />
+    <Content Include="floalaEditort\examples\textarea.html" />
+    <Content Include="floalaEditort\examples\text_near_image.html" />
+    <Content Include="floalaEditort\examples\themes\dark_theme.html" />
+    <Content Include="floalaEditort\examples\themes\gray_theme.html" />
+    <Content Include="floalaEditort\examples\themes\red_theme.html" />
+    <Content Include="floalaEditort\examples\themes\royal_theme.html" />
+    <Content Include="floalaEditort\examples\toolbar_customization.html" />
+    <Content Include="floalaEditort\examples\toolbar_fixed.html" />
+    <Content Include="floalaEditort\examples\two_editors.html" />
+    <Content Include="floalaEditort\examples\upload_pasted_images.html" />
+    <Content Include="floalaEditort\img\photo1.jpg" />
+    <Content Include="floalaEditort\js\froala_editor.min.js" />
+    <Content Include="floalaEditort\js\froala_editor_ie8.min.js" />
+    <Content Include="floalaEditort\js\langs\ar.js" />
+    <Content Include="floalaEditort\js\langs\bs.js" />
+    <Content Include="floalaEditort\js\langs\cs.js" />
+    <Content Include="floalaEditort\js\langs\da.js" />
+    <Content Include="floalaEditort\js\langs\de.js" />
+    <Content Include="floalaEditort\js\langs\en_ca.js" />
+    <Content Include="floalaEditort\js\langs\en_gb.js" />
+    <Content Include="floalaEditort\js\langs\en_us.js" />
+    <Content Include="floalaEditort\js\langs\es.js" />
+    <Content Include="floalaEditort\js\langs\et.js" />
+    <Content Include="floalaEditort\js\langs\fa.js" />
+    <Content Include="floalaEditort\js\langs\fi.js" />
+    <Content Include="floalaEditort\js\langs\fr.js" />
+    <Content Include="floalaEditort\js\langs\he.js" />
+    <Content Include="floalaEditort\js\langs\hr.js" />
+    <Content Include="floalaEditort\js\langs\hu.js" />
+    <Content Include="floalaEditort\js\langs\id.js" />
+    <Content Include="floalaEditort\js\langs\it.js" />
+    <Content Include="floalaEditort\js\langs\ja.js" />
+    <Content Include="floalaEditort\js\langs\ko.js" />
+    <Content Include="floalaEditort\js\langs\me.js" />
+    <Content Include="floalaEditort\js\langs\nb.js" />
+    <Content Include="floalaEditort\js\langs\nl.js" />
+    <Content Include="floalaEditort\js\langs\pl.js" />
+    <Content Include="floalaEditort\js\langs\pt_br.js" />
+    <Content Include="floalaEditort\js\langs\pt_pt.js" />
+    <Content Include="floalaEditort\js\langs\ro.js" />
+    <Content Include="floalaEditort\js\langs\ru.js" />
+    <Content Include="floalaEditort\js\langs\sr.js" />
+    <Content Include="floalaEditort\js\langs\sv.js" />
+    <Content Include="floalaEditort\js\langs\th.js" />
+    <Content Include="floalaEditort\js\langs\tr.js" />
+    <Content Include="floalaEditort\js\langs\uk.js" />
+    <Content Include="floalaEditort\js\langs\zh_cn.js" />
+    <Content Include="floalaEditort\js\langs\zh_tw.js" />
+    <Content Include="floalaEditort\js\plugins\block_styles.min.js" />
+    <Content Include="floalaEditort\js\plugins\char_counter.min.js" />
+    <Content Include="floalaEditort\js\plugins\colors.min.js" />
+    <Content Include="floalaEditort\js\plugins\entities.min.js" />
+    <Content Include="floalaEditort\js\plugins\file_upload.min.js" />
+    <Content Include="floalaEditort\js\plugins\font_family.min.js" />
+    <Content Include="floalaEditort\js\plugins\font_size.min.js" />
+    <Content Include="floalaEditort\js\plugins\fullscreen.min.js" />
+    <Content Include="floalaEditort\js\plugins\inline_styles.min.js" />
+    <Content Include="floalaEditort\js\plugins\lists.min.js" />
+    <Content Include="floalaEditort\js\plugins\media_manager.min.js" />
+    <Content Include="floalaEditort\js\plugins\tables.min.js" />
+    <Content Include="floalaEditort\js\plugins\urls.min.js" />
+    <Content Include="floalaEditort\js\plugins\video.min.js" />
+    <Content Include="floalaEditort\README.txt" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Icon.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="UI\CityEntry.aspx" />
+    <Content Include="UI\CountryEntry.aspx" />
+    <Content Include="UI\index.aspx" />
+    <Content Include="UI\Style.css" />
+    <Content Include="UI\ViewCities.aspx" />
+    <Content Include="UI\ViewCountry.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\CityManager.cs" />
+    <Compile Include="BLL\CountryManager.cs" />
+    <Compile Include="DAL\CityGateway.cs" />
+    <Compile Include="DAL\CountryGateway.cs" />
+    <Compile Include="Model\City.cs" />
+    <Compile Include="Model\Country.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\CityEntry.aspx.cs">
+      <DependentUpon>CityEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CityEntry.aspx.designer.cs">
+      <DependentUpon>CityEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CountryEntry.aspx.cs">
+      <DependentUpon>CountryEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CountryEntry.aspx.designer.cs">
+      <DependentUpon>CountryEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewCities.aspx.cs">
+      <DependentUpon>ViewCities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ViewCities.aspx.designer.cs">
+      <DependentUpon>ViewCities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewCountry.aspx.cs">
+      <DependentUpon>ViewCountry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ViewCountry.aspx.designer.cs">
+      <DependentUpon>ViewCountry.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="floalaEditort\package.json" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2283/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

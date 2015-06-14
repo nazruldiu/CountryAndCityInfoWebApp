@@ -1,0 +1,5 @@
+E:\Dot Net Projects\CountryAndCityWeb\CountryAndCityWeb\bin\CountryAndCityWeb.dll
+E:\Dot Net Projects\CountryAndCityWeb\CountryAndCityWeb\bin\CountryAndCityWeb.pdb
+E:\Dot Net Projects\CountryAndCityWeb\CountryAndCityWeb\obj\Debug\CountryAndCityWeb.csprojResolveAssemblyReference.cache
+E:\Dot Net Projects\CountryAndCityWeb\CountryAndCityWeb\obj\Debug\CountryAndCityWeb.dll
+E:\Dot Net Projects\CountryAndCityWeb\CountryAndCityWeb\obj\Debug\CountryAndCityWeb.pdb
